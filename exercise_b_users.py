@@ -61,11 +61,13 @@ print(users["Erik"]["home_town"])
 # 3. Get the array of Erik's lottery numbers
 print(users["Erik"]["lottery_numbers"])
 # 4. Get the species of Avril's pet Monty
+# ans can be longer - if not assuming number of index (use for loof then if name == monty)
 print(users["Avril"]["pets"][0]["species"])
 # 5. Get the smallest of Erik's lottery numbers
 smallest_number = min(users["Erik"]["lottery_numbers"])
 print(smallest_number)
 # 6. Return an array of Avril's lottery numbers that are even
+# ans !return array - needed to create list for new array then .append instead of print
 for number in users["Avril"]["lottery_numbers"]:
   if number % 2 == 0:
     print(number)
@@ -74,6 +76,7 @@ users["Erik"]["lottery_numbers"].append(7)
 # 8. Change Erik's hometown to Edinburgh
 users["Erik"]["home_town"] = "Edinburgh"
 # 9. Add a pet dog to Erik called "Fluffy"
+#ans - don't forget name + species!
 users["Erik"]["pets"].append({"dog":"Fluffy"})
 # 10. Add another person to the users dictionary
 users["Fred"] = {"twitter":"Freddo99", "home_town":"Glasgow"}

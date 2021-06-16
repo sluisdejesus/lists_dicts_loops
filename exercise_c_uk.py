@@ -25,8 +25,13 @@ united_kingdom.append({
   "capital" : "Belfast"
 })
 # 3. Use a loop to print the names of all the countries in the UK.
-for country in united_kingdom:
-  print(united_kingdom["name"])
+# for country in united_kingdom:
+#   print(united_kingdom["name"])
 # 4. Use a loop to find the total population of the UK.
+
+total_pop = 0
+for country in united_kingdom:
+  total_pop += country["population"]
+print(total_pop)
 
  
